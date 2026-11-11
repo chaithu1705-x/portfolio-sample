@@ -1,0 +1,297 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #10101e;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #19192d;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #a78bfa;
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+/* Home Section */
+.hero {
+    min-height: 85vh;
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 260px;
+}
+
+.welcome {
+    color: #a78bfa;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero h3 {
+    color: #ccccdd;
+    margin-bottom: 18px;
+}
+
+.hero-content p {
+    color: #b8b8c9;
+    margin-bottom: 25px;
+}
+
+.hero-image img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 5px solid #a78bfa;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #8b5cf6;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #6d28d9;
+    transform: translateY(-3px);
+}
+
+/* Common Section Styling */
+.section {
+    padding: 70px 10%;
+}
+
+.section-title {
+    text-align: center;
+    color: #a78bfa;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    color: #c5c5d5;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 700px;
+    margin: 30px auto 0;
+}
+
+.personal-info p {
+    background-color: #1d1d34;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 3px solid #a78bfa;
+}
+
+/* Education and Projects */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #1d1d34;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #343450;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #a78bfa;
+}
+
+.card h3 {
+    color: #a78bfa;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #c5c5d5;
+    margin-bottom: 8px;
+}
+
+.project-card span {
+    display: inline-block;
+    margin-top: 15px;
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.skill {
+    background-color: #242440;
+    border: 1px solid #8b5cf6;
+    color: #d6c5ff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #8b5cf6;
+    color: white;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    background-color: #19192d;
+}
+
+.contact > p {
+    color: #c5c5d5;
+}
+
+.contact-details {
+    margin: 25px 0;
+    color: #d6c5ff;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #0b0b16;
+    text-align: center;
+    padding: 22px;
+    color: #9999aa;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        text-align: center;
+        justify-content: center;
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-image img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .section {
+        padding: 50px 7%;
+    }
+
+    .personal-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+}
